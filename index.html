@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/afe8d235cc.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title> Matriz de Complejidad </title>
+  </head>
+  <body>
+
+
+
+    <div class="container-fluid col-md-8">
+
+      <h3> Matriz de Complejidad</h3>
+
+      <h4> Matriz de Negocio </h4>
+
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Atributo de Negocio</th>
+            <th>Zona I <br />
+              Complejidad Baja</th>
+            <th>Zona II <br />
+              Complejidad Media</th>
+            <th>Zona II <br />
+              Complejidad Alta</th>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Ejecutivos que poseen conocimiento en esa rama del negocio?</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1.1" value="option1"> Sólo 1
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1.2" value="option1"> Entre 2 y 3
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1.3" value="option1"> Nínguno o más de 4
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Definición de Objetivos de negocio</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2.1" value="option1"> Metodo SMART
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2.2" value="option1"> Método SMART aplicado regularmente
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2.3" value="option1"> Vagos
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Procesos del Negocio</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3.1" value="option1"> Pocos (1 a 4)
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3.2" value="option1"> (5 a 6)
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3.3" value="option1"> Muchos, más de (6)
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Políticas del Negocio</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4.1" value="option1"> Existentes
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4.2" value="option1"> Vagas
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4.3" value="option1"> Inexistentes
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Regulaciones del Negocio (Superintendencia o SII)</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5.1" value="option1"> Pocas y Simpples
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5.2" value="option1"> Pocas y complejas
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5.3" value="option1"> Muchas y complejas
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <th scope="row">Personal</th>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6.1" value="option1"> Experimentado
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6.2" value="option1"> Poca Experiencia
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6.3" value="option1"> Sin experiencia
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <th scope="row">Ambito Geográfico del Negocio</th>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7.1" value="option1"> Una localización
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7.2" value="option1"> Regional
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7.3" value="option1"> Global
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <th scope="row">Reglas internas del Negocio</th>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8.1" value="option1"> Establecidas
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8.2" value="option2"> Vagas
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8.3" value="option3"> Inexistentes
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h4> Matriz de Tecnología </h4>
+
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Atributo de la Tecnología</th>
+            <th>Zona I <br />
+              Complejidad Baja</th>
+            <th>Zona II <br />
+              Complejidad Media</th>
+            <th>Zona III <br />
+              Complejidad Alta</th>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Arquitectura tecnologica del proyecto</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio1.1" value="option1"> Existente en la empresa
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio1.2" value="option1"> Existen, pero no desarrolladas
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio1.3" value="option1"> No Existe
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Proveedores de Tecnología y Telecomunicaciones </th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio2.1" value="option1"> Antiguos con presencia mayor a 4 años
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio2.2" value="option1"> Antiguos con presencia de menos de 4 años
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio2.3" value="option1"> Nuevos
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Localización de los dispositivos a controlar</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio3.1" value="option1"> Solo (1) localización
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio3.2" value="option1"> Entre (3 y 4) localizaciones
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio3.3" value="option1"> (5) o más localizaciones
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Personal de Áreas Tecnologicas</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio4.1" value="option1"> Experimentado más de 2 años
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio4.2" value="option1"> Menos de 2 años de experiencia
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio4.3" value="option1"> Sin experiencia
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <th scope="row">Cantidad de plataformas</th>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio5.1" value="option1"> Pocas (1 a 3)
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio5.2" value="option1"> Sólo (4)
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio5.3" value="option1"> Muchas más de (4)
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <th scope="row">Nivel de integracion de las distintas plataforma, actualmente</th>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio6.1" value="option1"> Integradas
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio6.2" value="option1"> Medianemente integradas
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio6.3" value="option1"> Sin integración
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <th scope="row">Plataformas tolerantes a fallas o redundantes</th>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio7.1" value="option1"> Muchas (mayor 70%)
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio7.2" value="option1"> Entre (30% y 69%)
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio7.3" value="option1"> Menos del 30%
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+          <tr>
+            <th scope="row">Controles de seguridad a la tecnologia</th>
+            <form>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio8.1" value="option1"> Mensuales
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio8.2" value="option2"> Semanales
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tinlineRadio8.3" value="option3"> Diarios
+                  </td>
+                </label>
+              </div>
+            </form>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-md-6">
+          <button class="btn btn-success" onclick="calcular()"> Calcular puntaje y Matriz</button>
+
+        </div>
+        <div class="col-md-6">
+
+          <h4> Puntaje Matriz de Neg: <input class="text" disabled id="puntaje"/> </h4>
+          <h4> Puntaje Matriz de Tecn: <input class="text" disabled id="puntaje2"/> </h4>
+
+        </div>
+      </div>
+
+      <h4> Matriz de Complejidad </h4>
+
+      <div id="myDiv" style="width: 100%; height: 800px;"></div>
+
+    </div>
+
+
+  </body>
+  <script type="text/javascript" src="main.js"></script>
+</html>
